@@ -12,11 +12,7 @@
 %\usepackage{graphicx} 
 
 
-\def\name{Will Foran}
-\def\email{willforan@gmail.com}
-\def\PhoneNum{(315) 280-8167}
-\def\address{3519 Cottons Rd $\cdot$ Canastota, NY 13032}
-\def\website{http://will.foran.me}
+\input{subsec/identity.tex}
 \hypersetup{
 	colorlinks = true,
 	urlcolor= black,
@@ -42,121 +38,33 @@
 \begin{tabular}{r|l}
 \Telefon & \PhoneNum \\
 \Email & \href{mailto:\email}{ \email} \\ %prefix \email with \tt for monofont
-\Mundus & \href{\website}{ \website} \\ %prefix \email with \tt for monofont
+%\Mundus & \href{\website}{ \website} \\ %defunct
 \Letter &  \address \\
 \end{tabular}\\ 
 \hrule
 \begin{center} \end{center} \vfill
 
 %education
-\begin{minipage}{\firstWidth}
-\large \textcolor{Black}{\textsc{Education}}
-\end{minipage}
-\begin{minipage}{\secondWidth}
-\begin{itemize}
-\item{\textbf{M.S. Computational Biology}\hfill 2010 - present}
-    \begin{itemize}
-    \item{3.75 $\cdot$ Carnegie Mellon University(CMU) $\cdot$ \textcolor{Black}{Pittsburgh, PA}} 
-    \end{itemize}
-\item{\textbf{M.S. Mathematics Education} \hfill  2007 - 2008}
-    \begin{itemize}
-    \item{3.97 $\cdot$ Hofstra University $\cdot$ \textcolor{Black}{Hempstead, NY}}
-    \end{itemize}
-\item{\textbf{B.S. Interdisciplinary Science} \hfill2004 - 2007}
-    \begin{itemize}
-    \item{ 3.41 $\cdot$ Philosophy Minor $\cdot$ Rensselaer Polytechnic Institute (RPI) $\cdot$ \textcolor{Black}{Troy, NY}}
-    \end{itemize}
-\end{itemize}
-\end{minipage}
-
+\input{subsec/edu.tex}
 \vfill \begin{center}  \large \hrule \end{center}  \vfill
 
 %Experience
-\begin{minipage}{\firstWidth}
-\large \textcolor{Black}{\textsc{Experience}}
-\end{minipage}
-\begin{minipage}{\secondWidth}
-\begin{itemize}
-\item{\textbf{Research (CMU)} \hfill 2010 - present} 
-	\begin{itemize}
-	\item{Dr. Kausik Chakrabarti $\cdot$ Dr. Michael Widom}
-	\item {\em Using bioinformatics tools to elucidate microRNA-like structures in malaria}
-	\item $\cdot$ Write perl and shell scripts and use Bowtie to discover, produce, and visualize short read RNA coverage maps for areas of interests.  
-	\item $\cdot$ Format, display, and interpret sequence data with USCS malaria genome browser
-%	\item $\cdot$ Establish MySQL/Apache environment and compile the source tree for local malaria UCSC Genome Browser mirror 
-	\end{itemize}
-\item{\textbf{Technology Consulting} \hfill 2009}
-	\begin{itemize}
-	\item{Litigation Solutions, LLC \textcolor{Black}{$\cdot$ East Hartford, CT}}
-	\item{\em Designed juror application and web based front end}
-	\item $\cdot$ Wrote PHP and SQLite schemes for juror registration, mock trials presentation, juror ruling, and lawyer dashboard (juror statistics).  
-	\item $\cdot$ Used jQuery (javascript) extensively on web interface.
-	\end{itemize}
-\item{\textbf{Research (RPI)}\hfill 2007}
-	\begin{itemize}
-	\item{\em Examined Raf Kinase Inhibitor Protein in the Extracellular signal Regulated Kinase  pathway}
-	\item $\cdot$ Used Matlab to reconstruct equations
-	\item $\cdot$ Found the publication to be incorrect
-	\end{itemize}
-\end{itemize}
-\end{minipage}
-
+\input{subsec/experience.tex}
 \vfill \begin{center}  \large \hrule \end{center}  \vfill
 
-%coursework
-\begin{minipage}{\firstWidth}
-\large \textcolor{Black}{\textsc{Related Courses}}
-\end{minipage}
-\begin{minipage}{\secondWidth}
-\begin{itemize}  %this aligns withe everything else
-\begin{multicols}{2}
-\item
-Computational Genomics\\
-Computational Molecular Biology and Genomics \\
-Computational Methods for Biological Modeling and Simulation \\
-Machine Learning \\
-%Applied Machine Learning \\
-%Computer Vision \\
-Neural Computation\\
-Advanced Cellular Neuroscience \\
-Advanced Systems Neuroscience \\
-\end{multicols}
-\end{itemize}
-\end{minipage}
+
+%Tech 
+\input{subsec/tech.tex}
+\vfill \begin{center}  \large \hrule \end{center}  \vfill
+
+%Publications
+\input{subsec/pubs.tex}
 
 \vfill \begin{center}  \large \hrule \end{center}  \vfill 
 
-%Tech 
-\begin{minipage}{\firstWidth}
-\large \textcolor{Black}{\textsc{Technical Skills}}
-\end{minipage}
-\begin{minipage}{\secondWidth}
-\begin{itemize}
-    %a\begin{description}
-    \item 
-    \begin{tabular}{ll}
-    Operating Systems & Windows $\cdot$ OSX $\cdot$ Linux (primary 2003 - present) \\
-    Languages &  Perl $\cdot$ Shell $\cdot$ C++ $\cdot$ Matlab $\cdot$ ECMAScript (Javascript+jQuery) $\cdot$ PHP $\cdot$ SQL \\
-    Formating & \LaTeX  $\cdot$ HTML/CSS \\
-    Tools&  Vim $\cdot$ git $\cdot$ Bowtie $\cdot$ BLAST
-    \end{tabular}
-    %\end{description}
-\end{itemize}
-\end{minipage}
-
-\vfill \begin{center}  \large \hrule \end{center}  \vfill
 
 %Awards
-\begin{minipage}{\firstWidth}
-\large \textcolor{Black}{\textsc{Awards}} %/\\Honors}}
-\end{minipage}
-\begin{minipage}{\secondWidth}
-\begin{itemize}
-\item{Academic Achievement Fellowship \textcolor{Black}{$\cdot$ CMU}\hfill2010 }
-\item{Academic Honors Scholarship \textcolor{Black}{$\cdot$ Hofstra University}\hfill2007 - 2008}
-\item{Rensselaer Leadership Award \textcolor{Black}{$\cdot$RPI}\hfill2004 - 2007 }
-\end{itemize}
-\end{minipage}
+\input{subsec/awards.tex}
 \vfill
 %\hrul
 %\hrule
@@ -164,17 +72,6 @@ Advanced Systems Neuroscience \\
 \vfill
 
 %Personal
-\begin{minipage}{\firstWidth}
-\large \textcolor{Black}{\textsc{Activities}}
-\end{minipage}
-\begin{minipage}{\secondWidth}
-    %a\begin{description}
-    \begin{itemize}
-    \item{\small Harlequins Rugby Football Club $\cdot$ CMU RFC $\cdot$ CMU Explorers $\cdot$ The Climbing Wall 
-    $\cdot$  Appalachian Trail '09} 
-    %\item Frisbee $\cdot$ Soccer $\cdot$ XC $\cdot$ Crew
-    \end{itemize}
-    %\end{description}
-\end{minipage}
+\input{subsec/personal.tex}
 \end{document}
 
